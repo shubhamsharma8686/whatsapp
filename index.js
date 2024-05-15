@@ -22,7 +22,7 @@ app.post("/api/data", async (req, res) => {
     }
     console.log(req.body);
     // Extract data from request body
-    const { from, to, body } = req.body;
+    const { to, body } = req.body;
 
     // Initialize Twilio client
     const client = twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
